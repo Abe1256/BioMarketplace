@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="css/styles.css">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__h1">Bienvenido a la BioMarketplace</h1>
+        <nav class="header__nav">
+            <ul class="nav__ul">
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="Plasmidos.html">Plásmidos</a></li>
+                <li><a href="Armas.html">Armas</a></li>
+                <li><a href="Municion.html">Munición</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="intro">
+            <h2 class="intro__h2">Introducción</h2>
+            <p>Aquí podrás adquirir todo tipo de armas y plásmidos para abrirte paso por Rapture y salir ileso.</p>
+        </section>
+        <section class="form">
+            <h2 class="form__h2">Formulario de Contacto</h2>
+            <form action="enviar.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 BioMarketplace. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
